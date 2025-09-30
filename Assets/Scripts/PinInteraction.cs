@@ -2,23 +2,29 @@ using UnityEngine;
 
 public class PinInteraction : MonoBehaviour
 {
-    [Header("Quadro de Informações")]
-    public GameObject infoPanel; 
+    [Header("UI a ser mostrada")]
+    public GameObject infoCanvas;   
+    public GameObject globe;        
 
-    void Start()
+    [HideInInspector]
+    public bool isInfoOpen = false;
+
+    public void AbrirInfo()
     {
-        if (infoPanel != null)
-            infoPanel.SetActive(false); 
+        if (infoCanvas != null)
+        {
+            infoCanvas.SetActive(true);
+            isInfoOpen = true;
+        }
     }
 
-    private void OnMouseDown()
+    public void FecharInfo()
     {
-        ToggleInfo();
-    }
-
-    public void ToggleInfo()
-    {
-        if (infoPanel != null)
-            infoPanel.SetActive(!infoPanel.activeSelf);
+        if (infoCanvas != null)
+        {
+            infoCanvas.SetActive(false);
+            globe.SetActive(true);
+            isInfoOpen = false;
+        }
     }
 }
