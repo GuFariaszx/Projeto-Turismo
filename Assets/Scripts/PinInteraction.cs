@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PinInteraction : MonoBehaviour
 {
@@ -26,5 +27,15 @@ public class PinInteraction : MonoBehaviour
             globe.SetActive(true);
             isInfoOpen = false;
         }
+    }
+
+    public void VisualizarParis()
+    {
+        SceneManager.LoadScene("Teste");
+    }
+
+    public void VisualizarGreece()
+    {
+        SceneManager.LoadScene("Teste2");
     }
 }
