@@ -1,24 +1,41 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PinInteraction : MonoBehaviour
 {
-    [Header("Quadro de Informações")]
-    public GameObject infoPanel; 
+    [Header("UI a ser mostrada")]
+    public GameObject infoCanvas;   
+    public GameObject globe;        
 
-    void Start()
+    [HideInInspector]
+    public bool isInfoOpen = false;
+
+    public void AbrirInfo()
     {
-        if (infoPanel != null)
-            infoPanel.SetActive(false); 
+        if (infoCanvas != null)
+        {
+            infoCanvas.SetActive(true);
+            isInfoOpen = true;
+        }
     }
 
-    private void OnMouseDown()
+    public void FecharInfo()
     {
-        ToggleInfo();
+        if (infoCanvas != null)
+        {
+            infoCanvas.SetActive(false);
+            globe.SetActive(true);
+            isInfoOpen = false;
+        }
     }
 
-    public void ToggleInfo()
+    public void VisualizarParis()
     {
-        if (infoPanel != null)
-            infoPanel.SetActive(!infoPanel.activeSelf);
+        SceneManager.LoadScene("Teste");
+    }
+
+    public void VisualizarGreece()
+    {
+        SceneManager.LoadScene("Teste2");
     }
 }
