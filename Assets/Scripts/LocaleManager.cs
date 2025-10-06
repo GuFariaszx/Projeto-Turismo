@@ -56,16 +56,16 @@ public class LocaleManager : MonoBehaviour
             textCard1.text = "Welcome to Greece, the main place to visit old cultures, something, something";
 
             BGCard2.sprite = SpriteG2;
-            titleCard2.text = "Teste2";
-            textCard2.text = "Welcome to Greece, the main place to visit old cultures, something, something2";
+            titleCard2.text = "Discóbolo";
+            textCard2.text = "O Discóbolo, criado por Míron em 450 a.C., retrata um atleta prestes a lançar o disco e tornou-se um ícone do espírito esportivo e da arte da Grécia Antiga.";
 
             BGCard3.sprite = SpriteG3;
-            titleCard3.text = "Teste3";
-            textCard3.text = "Welcome to Greece, the main place to visit old cultures, something, something3";
+            titleCard3.text = "Arte";
+            textCard3.text = "A arte nos vasos da Grécia Antiga retratava cenas mitológicas, religiosas e do cotidiano, unindo função prática e expressão artística, e tornou-se um dos maiores legados culturais gregos.";
 
             BGCard4.sprite = SpriteG4;
-            titleCard4.text = "Teste4";
-            textCard4.text = "Welcome to Greece, the main place to visit old cultures, something, something4";
+            titleCard4.text = "Culinária";
+            textCard4.text = "O souvlaki, de origem na Grécia Antiga, é um prato popular feito de carne grelhada no espeto ou pão, símbolo da culinária de rua grega.";
         }
         else if(actualPlace == "Paris")
         {
@@ -77,16 +77,16 @@ public class LocaleManager : MonoBehaviour
             textCard1.text = "Welcome to Paris, the capital city of France, renowned for its iconic landmarks, world-class art, and romantic ambiance.";
 
             BGCard2.sprite = SpriteF2;
-            titleCard2.text = "Teste2";
-            textCard2.text = "Welcome to Paris, the capital city of France, renowned for its iconic landmarks, world-class art, and romantic ambiance.2";
+            titleCard2.text = "TorreEiffel";
+            textCard2.text = "A Torre Eiffel, construída em 1889 para a Exposição Universal, é o maior símbolo de Paris e da França moderna.";
 
             BGCard3.sprite = SpriteF3;
-            titleCard3.text = "Teste3";
-            textCard3.text = "Welcome to Paris, the capital city of France, renowned for its iconic landmarks, world-class art, and romantic ambiance.3";
+            titleCard3.text = "Béret";
+            textCard3.text = "O béret, criado no século XIX e usado por camponeses e soldados, transformou-se em um dos maiores símbolos culturais e da moda francesa.";
 
             BGCard4.sprite = SpriteF4;
-            titleCard4.text = "Teste4";
-            textCard4.text = "Welcome to Paris, the capital city of France, renowned for its iconic landmarks, world-class art, and romantic ambiance.4";
+            titleCard4.text = "Culinária";
+            textCard4.text = "O croissant, de origem austríaca, chegou à França no século XVIII e em Paris ganhou sua versão folhada amanteigada, tornando-se um ícone da cultura dos cafés parisienses. O queijo é um importante elemento gastronômico da França, devido a seus peculiares e fortes sabores.";
 
         }
     }

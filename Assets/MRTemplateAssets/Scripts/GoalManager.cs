@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using TMPro;
 using LazyFollow = UnityEngine.XR.Interaction.Toolkit.UI.LazyFollow;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.SceneManagement;
 
 namespace UnityEngine.XR.Templates.MR
 {
@@ -231,6 +232,7 @@ namespace UnityEngine.XR.Templates.MR
             {
                 m_AllGoalsFinished = true;
                 ForceEndAllGoals();
+                BackScene();
             }
 
             if (m_CurrentGoal.CurrentGoal == OnboardingGoals.FindSurfaces)
@@ -265,6 +267,11 @@ namespace UnityEngine.XR.Templates.MR
                 m_FeatureController.TogglePlaneVisualization(visualize);
                 m_FeatureController.TogglePlanes(true);
             }
+        }
+
+        void BackScene()
+        {
+            SceneManager.LoadScene("Cena1");
         }
 
         IEnumerator TurnOnARFeatures()
