@@ -42,4 +42,5 @@ public class PinInteraction : MonoBehaviour
         SceneManager.LoadScene("Teste");
         countryName = "Grecia";
     }
+
 }
