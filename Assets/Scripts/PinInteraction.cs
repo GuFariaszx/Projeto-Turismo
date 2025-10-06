@@ -10,8 +10,7 @@ public class PinInteraction : MonoBehaviour
     [HideInInspector]
     public bool isInfoOpen = false;
 
-    [Header("NextScene")]
-    public string countryName;
+    public string countryName; 
 
     public void AbrirInfo()
     {
@@ -35,13 +34,13 @@ public class PinInteraction : MonoBehaviour
     public void VisualizarParis()
     {
         SceneManager.LoadScene("Teste");
-        countryName = "France";
+        countryName = "Paris";
     }
 
     public void VisualizarGreece()
     {
-        SceneManager.LoadScene("Teste2");
-        countryName = "Greece";
+        SceneManager.LoadScene("Teste");
+        countryName = "Grecia";
     }
 
 }
